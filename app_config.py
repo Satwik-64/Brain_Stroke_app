@@ -6,10 +6,10 @@ import os
 
 # File Paths
 MODEL_PATHS = {
-    "VGG19": r"C:\Programs\Brain_stroke_app\vgg19_best_model.keras",
-    "ResNet50": r"C:\Programs\Brain_stroke_app\resnet_best_model.keras",
-    "EfficientNetB0": r"C:\Programs\Brain_stroke_app\efficientnet_best_model.keras",
-    "Autoencoder" : r"C:\Programs\Brain_stroke_app\brain_stroke_autoencoder.keras"
+    "VGG19": "vgg19_best_model.keras",
+    "ResNet50": "resnet_best_model.keras",
+    "EfficientNet": "efficientnet_best_model.keras",
+    "AutoEncoder": "brain_stroke_autoencoder.keras"
 }
 
 # Target Layers for XAI (Backend use only)
