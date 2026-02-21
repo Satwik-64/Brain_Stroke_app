@@ -1,5 +1,5 @@
 import tensorflow as tf
-from config import MODEL_LAYERS
+from app_config import MODEL_LAYERS
 from core.xai import StrokeDetectorXAI
 
 @tf.keras.utils.register_keras_serializable()

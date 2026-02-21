@@ -1,7 +1,7 @@
 import streamlit as st
 import cv2
 import numpy as np
-from config import IMG_SIZE
+from app_config import IMG_SIZE
 
 def upload_image():
     st.markdown("## 📤 Upload Brain MRI Scan")

@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from config import MODEL_META, CONFUSION_MATRICES
+from app_config import MODEL_META, CONFUSION_MATRICES
 
 def render_model_report(model_name, go_back_callback):
     """

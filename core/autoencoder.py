@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import cv2
-from config import MODEL_PATHS
+from app_config import MODEL_PATHS
 import streamlit as st
 
 @st.cache_resource(show_spinner=False)

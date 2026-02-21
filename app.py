@@ -10,7 +10,7 @@ import tensorflow as tf
 tf.get_logger().setLevel(logging.ERROR)
 
 
-from config import MODEL_PATHS, MODEL_META
+from app_config import MODEL_PATHS, MODEL_META
 from core.inference import predict_stroke
 from core.model_loader import load_xai_for_model
 from ui.layout import top_navbar
