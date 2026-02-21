@@ -8,7 +8,7 @@ import os
 MODEL_PATHS = {
     "VGG19": "vgg19_best_model.keras",
     "ResNet50": "resnet_best_model.keras",
-    "EfficientNet": "efficientnet_best_model.keras",
+    "EfficientNetB0": "efficientnet_best_model.keras",
     "AutoEncoder": "brain_stroke_autoencoder.keras"
 }
 
