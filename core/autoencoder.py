@@ -7,7 +7,7 @@ import streamlit as st
 @st.cache_resource(show_spinner=False)
 def load_autoencoder():
     try:
-        return tf.keras.models.load_model(MODEL_PATHS["Autoencoder"])
+        return tf.keras.models.load_model(MODEL_PATHS["AutoEncoder"])
     except Exception as e:
         st.error(f"Autoencoder model not found: {e}")
         return None
