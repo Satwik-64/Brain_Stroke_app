@@ -1,6 +1,7 @@
 import tensorflow as tf
 from app_config import MODEL_LAYERS
-from core.xai import StrokeDetectorXAI
+
+# REMOVED: from core.xai import StrokeDetectorXAI (This was causing the crash)
 
 @tf.keras.utils.register_keras_serializable()
 def f1_score(y_true, y_pred):
@@ -13,6 +14,9 @@ def f1_score(y_true, y_pred):
     return 2 * ((precision * recall) / (precision + recall + K.epsilon()))
 
 def load_xai_for_model(model, model_name):
+    # MOVED IMPORT HERE: Lazy import prevents circular dependency error
+    from core.xai import StrokeDetectorXAI
+    
     target_layer = MODEL_LAYERS.get(model_name)
     if not target_layer:
         raise ValueError(f"No XAI target layer defined for {model_name}")
